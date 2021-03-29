@@ -1,0 +1,14 @@
+[Unit]
+Description=Toggle Led Service
+After=network.target
+
+[Service]
+ExecStart=/home/pi/sictcweb/linux/embed/toggle.led.sh
+WorkingDirectory=/home/pi/sictcweb/linux/embed/
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
