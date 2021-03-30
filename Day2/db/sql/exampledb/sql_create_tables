@@ -1,0 +1,12 @@
+CREATE TABLE Contacts (
+    Id Int, 
+    LastName varchar(100), 
+    FirstName varchar(100)
+);
+
+CREATE TABLE States(
+    Id int NOT NULL AUTO_INCREMENT, 
+    State varchar(2),
+    PRIMARY KEY (Id),
+    UNIQUE KEY (State)
+);

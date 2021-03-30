@@ -1,0 +1,2 @@
+INSERT INTO Contacts VALUES(1, 'Doe', 'Jane');
+INSERT INTO Contacts VALUES(2, 'Payne', 'Max');

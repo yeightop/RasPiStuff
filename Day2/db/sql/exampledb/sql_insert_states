@@ -1,0 +1,2 @@
+INSERT INTO States (State) VALUES ('IN');
+INSERT INTO States (State) VALUES ('OH');

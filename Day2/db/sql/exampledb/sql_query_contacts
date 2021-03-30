@@ -1,0 +1,14 @@
+SELECT Id, LastName, FirstName FROM Contacts;
+SELECT * FROM Contacts;
+
+
+SELECT C.Id, C.LastName, C.FirstName, C.Email, S.State FROM Contacts C 
+LEFT JOIN States S
+ON
+C.StateId = S.Id
+
+
+SELECT C.Id, C.LastName, C.FirstName, C.Email, C.City, S.State, C.Zip FROM Contacts C 
+LEFT JOIN States S
+ON
+C.StateId = S.Id;

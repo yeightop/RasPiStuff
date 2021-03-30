@@ -1,0 +1,6 @@
+ALTER TABLE Contacts ADD Email varchar(255);
+ALTER TABLE Contacts ADD StateId int;
+ALTER TABLE Contacts ADD City varchar(50);
+ALTER TABLE Contacts ADD Zip varchar(10);
+
+
