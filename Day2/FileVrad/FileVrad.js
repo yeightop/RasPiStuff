@@ -29,7 +29,7 @@ for(var i = 0;i<txty0.length-1;i++){
     txty1.push(j)
 }
     
-console.log(txty0)
+console.log(txty1)
 var textSQL=[]
 
 encodeDecode(vin)
@@ -63,7 +63,7 @@ function readFile(){
     var fs = require('fs');
 
     try {  
-        var data = fs.readFileSync('vin100.txt', 'utf8');
+        var data = fs.readFileSync('vins100.txt', 'utf8');
         console.log(data.toString()); 
 
         return data  
