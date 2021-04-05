@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# echo Please enter username:
+# read uid
+# echo Please enter password:
+# read -s pwd
+
+# echo -e Welcome: $uid '\n'
+
+export VPOAUTH="abcxyz"
+
