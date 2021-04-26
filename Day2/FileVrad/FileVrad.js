@@ -1,6 +1,6 @@
 const vmap = '0123456789ABCDEFGHJKLMNPRSTUVWXYZ'
 const base = '34'
-const vin = 'JTHKD5BH0D2170008'
+var vin = 'JTHKD5BH0D2170008'
 
 const wmi = vmapencode(vin.substring(0,3))
 const vds = vmapencode(vin.substring(2,5))
@@ -31,32 +31,40 @@ for(var i = 0;i<txty0.length-1;i++){
     
 console.log(txty1)
 var textSQL=[]
+//vin = txty1[0]
+for(var i = 0;i<txty1.length-1;i++){
+    var j = (txty0[i])
+    //console.log(j)
+    encodeDecode(j)
+} 
 
-encodeDecode(vin)
 
 
-function encodeDecode(vin){
-    console.log('\n\n\n\n\nvin: '+vin)
-    console.log('encoding section')
+function encodeDecode(vin1){
+    //console.log('\n\n\n\n\nvin: '+vin)
+    //console.log('encoding section')
     vraddecx(22900,34,3)
-    wmiEn=vmapencode(vin.substring(0,3),base)
-    vdsEn=vmapencode(vin.substring(3,8),base)
-    serEn=vmapencode(vin.substring(8),base)
-    console.log('deCoding section below ',wmiEn,vdsEn,serEn)
+    wmiEn=vmapencode(vin1.substring(0,3),base)
+    vdsEn=vmapencode(vin1.substring(3,8),base)
+    serEn=vmapencode(vin1.substring(8),base)
+    //console.log('deCoding section below ',wmiEn,vdsEn,serEn)
     textSQL.push(wmiEn.toString()+vdsEn.toString()+serEn.toString())
     var decode=''
     var swmi=vraddecx(wmiEn,base,wmiEn.toString().length)
     var svds=vraddecx(vdsEn,base,vdsEn.toString().length)
     var sser=vraddecx(serEn,base,serEn.toString().length)
-    console.log(swmi)
-    console.log(svds)
-    console.log(sser)
+    //console.log(swmi)
+    //console.log(svds)
+    //console.log(sser)
     decode=swmi.toString()+svds.toString()+sser.toString()
 
-    console.log()
+    //console.log('\n',":",wmiEn,vdsEn,serEn,vin1)
+    console.log("INSERT INTO Vins (Vin,wmiVrad,desVrad,serVrad) VALUES (",vin1,wmiEn,vdsEn,serEn,");")
+
     if (vin === decode){
-        console.log(decode.toString() + " (the decode) \n"+ vin+" (the vin)\n\n\n\n\n\n\n\n ")
+        //console.log(decode.toString() + " (the decode) \n"+ vin+" (the vin)\n\n\n\n\n\n\n\n ")
     }
+    
 }
 
 function readFile(){
@@ -64,7 +72,7 @@ function readFile(){
 
     try {  
         var data = fs.readFileSync('vins100.txt', 'utf8');
-        console.log(data.toString()); 
+        //console.log(data.toString()); 
 
         return data  
     } catch(e) {
