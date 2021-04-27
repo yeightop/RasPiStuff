@@ -59,7 +59,7 @@ function encodeDecode(vin1){
     decode=swmi.toString()+svds.toString()+sser.toString()
 
     //console.log('\n',":",wmiEn,vdsEn,serEn,vin1)
-    console.log("INSERT INTO Vins (Vin,wmiVrad,desVrad,serVrad) VALUES (",vin1,wmiEn,vdsEn,serEn,");")
+    console.log("INSERT INTO Vins (Vin,wmiVrad,desVrad,serVrad) VALUES (",vin1+",",wmiEn+",",vdsEn+",",serEn,");\n")
 
     if (vin === decode){
         //console.log(decode.toString() + " (the decode) \n"+ vin+" (the vin)\n\n\n\n\n\n\n\n ")
