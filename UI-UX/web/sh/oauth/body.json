@@ -1,0 +1,8 @@
+{
+    "client_id": "ZewaRueG57rtsjl6n6FZgXE0yHk4wInS",
+    "username": "@username",
+    "password": "@password",
+    "connection": "Username-Password-Authentication",
+    "grant_type": "password",
+    "scope": "openid roles uid"
+  }

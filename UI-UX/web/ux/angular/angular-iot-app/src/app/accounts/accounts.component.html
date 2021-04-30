@@ -1,0 +1,9 @@
+<div class="body">
+    <div class="info" *ngFor="let account of accounts; let i = index;">
+        <app-account [account]="account" [index]="i"></app-account>
+    </div>
+    <div class="btn-container">
+        <button class="btn" routerLink="/login">Log Out</button>
+    </div>
+    <lib-cp-button [style]="'outline-neutral-med'" [text]="'hi'"></lib-cp-button>
+</div>

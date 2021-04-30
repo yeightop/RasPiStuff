@@ -1,0 +1,92 @@
+CREATE TABLE Accounts(
+    Id int NOT NULL AUTO_INCREMENT, 
+    Name varchar(50),
+    Address varchar(50),
+    City varchar(50),
+    StateId int,
+    Zip varchar(10),
+    LastUpdate timestamp NULL,
+    CreatedDate timestamp DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (Id)
+);
+
+INSERT INTO Accounts (Name, Address, City, StateId, Zip) VALUES ('SICTC', '1901 Lynch Rd', 'Evansville', 1, '47711');
+
+CREATE TABLE Users(
+    Id int NOT NULL AUTO_INCREMENT, 
+    AccountId int NOT NULL,
+    Email varchar(200) NOT NULL,
+    LastName varchar(50),
+    Firstname varchar(50),
+    Password CHAR(40),
+    LastLogin timestamp NULL,
+    LastUpdate timestamp NULL, 
+    CreatedDate timestamp DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (Id),
+    UNIQUE KEY (Email)
+);
+
+INSERT INTO Users (AccountId, Email, LastName, FirstName, Password) VALUES(1, 'johnc@sictc.edu', 'Cobb', 'John', SHA1('Pencil1'));
+
+
+### BEGIN SHA2 512 VERSION OF USERS TABLE
+
+CREATE TABLE Users(
+    Id int NOT NULL AUTO_INCREMENT, 
+    AccountId int NOT NULL,
+    Email varchar(200) NOT NULL,
+    LastName varchar(50),
+    Firstname varchar(50),
+    Password CHAR(128),
+    LastLogin timestamp NULL,
+    LastUpdate timestamp NULL, 
+    CreatedDate timestamp DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (Id),
+    UNIQUE KEY (Email)
+);
+
+
+INSERT INTO Users (AccountId, Email, LastName, FirstName, Password) VALUES(1, 'johnc@sictc.edu', 'Cobb', 'John', SHA2('Pencil1', 512));
+### END SHA2 512 VERSION OF USERS TABLE
+
+CREATE TABLE IoT(
+    Id int NOT NULL AUTO_INCREMENT, 
+    AccountId int NOT NULL,
+    TypeId int NOT NULL,
+    IMEI CHAR(16) NOT NULL,
+    Serial VARCHAR(20) NOT NULL,
+    Name varchar(50) NOT NULL,
+    Lat int NULL,
+    Lng int NULL,
+    Alt int NULL,
+    Speed int NULL,
+    Direction int NULL,
+    Bearing int NULL,
+    LastUpdate timestamp NULL, 
+    CreatedDate timestamp DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (Id)
+);
+
+CREATE TABLE Groups(
+    Id int NOT NULL AUTO_INCREMENT, 
+    AccountId int NOT NULL,
+    Name varchar(50),
+    LastUpdate timestamp NULL,
+    CreatedDate timestamp DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (Id)
+);
+
+CREATE TABLE IoTGroups(
+    Id int NOT NULL AUTO_INCREMENT, 
+    IoTId int NOT NULL,
+    GroupId int NOT NULL,
+    CreatedDate timestamp DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (Id)
+);
+
+CREATE TABLE States(
+    Id int NOT NULL AUTO_INCREMENT, 
+    State varchar(2),
+    PRIMARY KEY (Id),
+    UNIQUE KEY (State)
+);

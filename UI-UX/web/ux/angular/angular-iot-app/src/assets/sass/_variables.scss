@@ -1,0 +1,205 @@
+// Unison Colors
+//New Light Neutrals
+$light-neutral-100: #F6FAFC;
+$light-neutral-200: #EDF2F7;
+$light-neutral-300: #E2E8F0;
+$light-neutral-400: #CBD5E0;
+$light-neutral-500: #A0AEC0;
+$light-neutral-600: #718096;
+$light-neutral-700: #4A5568;
+$light-neutral-800: #2D3748;
+$light-neutral-900: #1A202C;
+//New Dark Neutrals
+$dark-neutral-100: #BFC7CF;
+$dark-neutral-200: #A4ADB6;
+$dark-neutral-300: #8894A0;
+$dark-neutral-400: #6E7A87;
+$dark-neutral-500: #49525B;
+$dark-neutral-600: #353B42;
+$dark-neutral-700: #353B42;
+$dark-neutral-800: #2C3137;
+$dark-neutral-900: #1F2429;
+//New Reds
+$red-100: #FFF5F5;
+$red-200: #FED7D7;
+$red-300: #FEB2B2;
+$red-400: #FC8181;
+$red-500: #F56565;
+$red-600: #E53E3E;
+$red-700: #C53030;
+$red-800: #9B2C2C;
+$red-900: #742A2A;
+//New Oranges
+$orange-100: #FFFAF0;
+$orange-200: #FEEBC8;
+$orange-300: #FBD38D;
+$orange-400: #F6AD55;
+$orange-500: #ED8936;
+$orange-600: #DD6B20;
+$orange-700: #C05621;
+$orange-800: #9C4221;
+$orange-900: #7B341E;
+//New Yellows
+$yellow-100: #FFFFF0;
+$yellow-200: #FEFCBF;
+$yellow-300: #FAF089;
+$yellow-400: #F6E05E;
+$yellow-500: #ECC94B;
+$yellow-600: #D69E2E;
+$yellow-700: #B7791F;
+$yellow-800: #975A16;
+$yellow-900: #744219;
+//New Greens
+$green-100: #F0FFF4;
+$green-200: #C6F6D5;
+$green-300: #9AE6B4;
+$green-400: #68D391;
+$green-500: #48BB78;
+$green-600: #38A169;
+$green-700: #2F855A;
+$green-800: #276749;
+$green-900: #22543D;
+//New Teals
+$teal-100: #E5FFFA;
+$teal-200: #B2F5EA;
+$teal-300: #81E6D9;
+$teal-400: #4FD1C5;
+$teal-500: #38B2AC;
+$teal-600: #319795;
+$teal-700: #2C7A7B;
+$teal-800: #285E61;
+$teal-900: #234E52;
+//New Blues
+$blue-100: #EBF8FF;
+$blue-200: #BEE3F8;
+$blue-300: #90CDF4;
+$blue-400: #63B3ED;
+$blue-500: #4299E1;
+$blue-600: #3182CE;
+$blue-700: #2B6CB0;
+$blue-800: #2C5282;
+$blue-900: #2A4365;
+//New Indigos
+$indigo-100: #EBF4FF;
+$indigo-200: #C3DAFE;
+$indigo-300: #A3BFFA;
+$indigo-400: #7F9CF5;
+$indigo-500: #667EEA;
+$indigo-600: #5A67D8;
+$indigo-700: #4C51BF;
+$indigo-800: #434190;
+$indigo-900: #3C366B;
+//New Purples
+$purple-100: #FAF5FF;
+$purple-200: #E9D8FD;
+$purple-300: #D6BCFA;
+$purple-400: #B794FA;
+$purple-500: #8F7AEA;
+$purple-600: #805AD5;
+$purple-700: #6B46C1;
+$purple-800: #553C9A;
+$purple-900: #44337A;
+//VP Colors
+$accent-blue: #54C1E8;
+$vp-orange: #FFA400;
+$white: #FFFFFF;
+$vp-blue-alternate: #3586B9;
+$vp-primary-dark: #2E5A76;
+
+
+
+
+
+// Blues
+$u-brand-blue: #2c5a77 !default;
+$u-brand-blue-lighter: rgba(92, 168, 208,1) !default;
+$u-brand-blue-lightest: rgba(205, 227, 240,1) !default;
+$u-brand-blue-original: rgb(46,90,118);
+$u-brand-blue-original-light: rgb(107,132,149);
+$u-brand-blue-darker: #2B4255;
+
+// Greens
+$u-brand-green: rgba(99, 160, 169,1) !default;
+$u-brand-green-dark: rgb(61, 165, 119) !default;
+$u-brand-green-lighter: rgb(124,175,182) !default;
+$u-brand-green-lightest: rgb(148, 189 ,194) !default;
+$u-brand-green-ultralight: rgba(148, 189, 194, 0.36) !default;
+// Reds
+$u-brand-red: rgb(189,78,74) !default;
+$u-brand-red-bright: rgb(235, 90, 73) !default;
+// Yellows
+$u-brand-yellow: rgba(230, 218, 148,1) !default;
+// Organges
+$u-brand-orange: rgba(255, 164, 0, 100) !default;
+$u-brand-orange-lighter: rgba(255, 182, 51, 100) !default;
+// Beiges
+$u-brand-beige: rgba(242, 242, 242,1) !default;
+$u-brand-beige-dark: rgba(214,214,214,1) !default;
+$u-brand-beige-darker: rgba(219, 219, 219,1) !default;
+// Greys
+$u-brand-grey: rgb(225, 225, 225) !default;
+$u-brand-grey-med: rgb(170, 170, 170) !default;
+$u-brand-grey-dark: rgb(153, 153, 153) !default;
+$u-brand-grey-darker: rgb(92, 92, 92) !default;
+$u-brand-grey-light: rgb(201, 213, 220) !default;
+//Purple
+$u-brand-purple: rgb(126, 121, 192) !default;
+
+// Banner variables
+$u-brand-banner-zindex: 300;
+$u-banner-height: 90px;
+$u-banner-internal-padding: 40px;
+$u-banner-dropdown-icon-size: 16px;
+$u-brand-banner-dropdown-padding: 33px;
+$u-brand-banner-dropdown-icon-padding: 7px;
+
+// Navbar Variables
+$u-navbar-zindex: $u-brand-banner-zindex - 10; // Prevents the dropdown from being behind the navbar
+$u-navbar-height: 75px;
+$bootstrap-navbar-height: 50px;
+
+// Filter Bar Variables
+$u-filter-bar-height: $bootstrap-navbar-height;
+$u-filter-bar-zindex: 280;
+
+// Card Variables
+$u-card-panel-buffer: 30px; // Padding around .card-panel
+$u-card-height: 200px;
+$u-card-footer-height: 35px;
+$u-card-font-color: rgba(92,92,92,1);
+
+// Sidebar Variables
+$u-sidebar-anim-timing: .3s;
+$u-sidebar-width: 290px;
+
+// Login Variables
+$u-login-header-logo-width: 250px;
+$u-login-header-tagline-margin: 25px;
+
+// Table Variables
+$u-table-hover-color: $u-brand-grey;
+
+  /* Large Devices, Wide Screens */
+  @media only screen and (max-width : 1200px) {
+
+  }
+
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width : 992px) {
+
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
